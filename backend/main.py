@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 from datetime import date
 
 load_dotenv()
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:postgres@localhost/hrms_lite")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://hrms_user:JJQEwB2IdkrH4zKcx1uXxzdAo2k704Xe@dpg-d6et7mp5pdvs73f0vs0g-a/hrms_lite_zn6f")
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base.metadata.create_all(bind=engine)
