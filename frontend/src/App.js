@@ -10,12 +10,13 @@ import {
   CircularProgress,
   Alert,
 } from "@mui/material";
+// Removed unused Button import
 import EmployeeManagement from "./EmployeeManagement";
 import AttendanceManagement from "./AttendanceManagement";
 
 function App() {
   const [tab, setTab] = useState(0);
-  const [loading, setLoading] = useState(false);
+  const [loading] = useState(false); // Removed unused setLoading
   const [error, setError] = useState(null);
 
   const handleTabChange = (event, newValue) => {
