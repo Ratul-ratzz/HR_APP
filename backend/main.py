@@ -1,3 +1,4 @@
+from fastapi.middleware.cors import CORSMiddleware
 
 from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
@@ -19,10 +20,10 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-# Add CORS middleware
+# Add CORS middleware after app is defined
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Frontend origin
+    allow_origins=["https://hrmsappf.netlify.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
