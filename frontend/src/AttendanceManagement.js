@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   Box,
   Typography,
@@ -16,7 +16,7 @@ import {
   Alert,
 } from "@mui/material";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://hrms-backend-4h24.onrender.com";
 
 function AttendanceManagement() {
   const [employees, setEmployees] = useState([]);
