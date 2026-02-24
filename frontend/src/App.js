@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Container,
   AppBar,
@@ -9,7 +9,6 @@ import {
   Box,
   CircularProgress,
   Alert,
-  Button,
 } from "@mui/material";
 import EmployeeManagement from "./EmployeeManagement";
 import AttendanceManagement from "./AttendanceManagement";
